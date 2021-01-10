@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+body {
+ background-color: rgba(1, 1, 12, 0.836);
+}
+div.img {
+  width: 300px;
+  object-fit: contain;
+}
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+ .container {
+   display:block;
+   color: #fff;
+   width: 90%;
+   margin: 40px auto;
+   word-spacing: 1px;
+ }
+ .text >h1 {
+   font-size: 1.7rem;
+   padding: 20px 0;
+ }
+ .text>p {
+   width: 90%;
+ }
+ form {
+   margin: 20px 0;
+ }
+ .sign-up >div {
+   margin: 20px 0
+ }
+ label  {
+   display: block;
+ }
+ input {
+   line-height: 34px;
+   width: 90%;
+   border-radius: 4px;
+   border: none;
+ }
+  div.tel {
+position: relative;
+  }
+  div.tel .two {
+    position: absolute;
+    top: 0;
+    right: 25px;
+  }
+  textarea {
+   width: 90%;
+   border-radius: 4px;
+   border: none;
+ }
+   div.message {
+position: relative;
+  }
+  .text1, .text2 {
+    font-size: 10px;
+    word-spacing: 0.4px;
+  }
+  div.message .text2 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+  }
+  input[type="radio"] {
+    display: inline;
+  }
+  div.btn {
+     text-align: right; 
+     margin-right: 25px;
+    }
+    button {
+   padding: 8px 15px;
+   border: none;
+   border-radius: 4px;
+   background-color:transparent;
+   border: 2px solid #666;
+   transition: all 0.5s ease-in-out;
+    }
+    a {
+      color:#fff;
+      text-decoration: none;
+      font-weight: bold;
+
+    }
+    button:hover {
+      background-color: rgb(1, 1, 26);
+    }
+
+    @media (min-width: 360px) {
+      .container {
+   display:block;
+   color: #fff;
+   width: 90%;
+   margin: 40px auto;
+   word-spacing: 1px;
+ }
+  div.tel {
+position: relative;
+  }
+  div.tel .two {
+    position: absolute;
+    top: 0;
+    right: 34px;
+  }
+    div.message {
+position: relative;
+  }
+  .text1, .text2 {
+    font-size: 10px;
+    word-spacing: 0.4px;
+  }
+  div.message .text2 {
+    position: absolute;
+    top: 0;
+    right: 34px;
+  }
+  div.btn {
+     text-align: right; 
+     margin-right: 33px;
+    }
+    }
+
+    @media (min-width: 768px) {
+         .container {
+   display:flex;
+   flex-direction: row-reverse;
+   color: #fff;
+   max-width: 1120px;
+   width: 100%;
+   margin: 40px auto;
+   word-spacing: 1px;
+    }
+     div.text-section {
+      width:50%;
+     }
+    div.image {
+      width: 30%;
+      margin-top: 30px;
+      max-height: 90%;
+    }
+    input {
+      width: 90%;
+      display: block;
+    }
+    div.firstN, div.lastN {
+      display: inline-block;
+      flex-direction: column;
+      width: 47%;
+    }
+  }
