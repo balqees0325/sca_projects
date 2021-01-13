@@ -5,10 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Thank you page</title>
+    <style>
+      .container {
+        display: block;
+        margin: 20px auto;
+        width:400px; 
+      }
+      .image{
+        margin: auto;
+      }
+      p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 40px;
+      }
+      @media (max-width: 678px){
+        .container {
+        display: block;
+        margin: 20px auto;
+        width:100%; 
+      }
+       p {
+      font-size: 1rem; 
+       text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+      }
+    </style>
   </head>
   <body>
-    <div class="img">
+    <div class="container">
+    <div class="image">
       <img src="thanks1.jpg" alt="" />
+    </div>
+    <p>Your response have be submitted!!!</p>
     </div>
   </body>
 </html>

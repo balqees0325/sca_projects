@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <!-- <script src="script.js" defer></script> -->
   <title>Form Task</title>
 </head>
 <body>
@@ -19,68 +19,72 @@
    </div>
    <div class="form">
    <form class="sign-up">
+     
      <div class="firstN">
-       <label class="input" for="firstName">Last
+       <label class="input" for="firstName">First
         Name</label>
        <input type="text"
-       id="firstName">
+       id="firstName" required>
      </div>
 
      <div class="lastN">
-      <label class="input" for="lastName">First
+      <label class="input" for="lastName">Last
         Name</label>
        <input type="text"
-       id="lastName">
+       id="lastName" required>
      </div>
 
      <div class="mail">
       <label class="input" for="email">Email</label>
        <input type="email"
-       id="email">
+       id="email" required>
      </div>
 
      <div class="company">
-      <label for="company">Company</label>
+      <label class="input"
+      for="company">Company</label>
        <input type="text"
-       id="company">
+       id="company" required>
      </div>
 
      <div class="tel">
-      <label class="one" for="tel">Phone</label>
+      <label class="input"
+      class="one" for="tel">Phone</label>
        <input type="tel"
-       id="tel">
+       id="tel" required>
        <label class="two" for="">Optional</label>
      </div>
+     
 
      <div class="message">
        <p class="text1">How can we help you</p>
        <p class="text2">Max of 300 chareacters</p>
      <textarea name="" id="" cols="30" rows="10"></textarea>
      </div>
-
-     <div class="box">
-       <h2>Expected budget</h2>
-       <div>
+     <fieldset>
+     <legend>
+       Expected budget</legend>
+       <div class="box">
        <input type="radio" name="" id="radio">
       <label class="radio" for="radio">Less than $25k</label>
      </div>
-     <div>
+     <div class="box">
        <input type="radio" name="" id="radio">
       <label class="radio" for="radio">$25k-$50k</label>
      </div>
-     <div>
+     <div class="box">
        <input type="radio" name="" id="radio">
       <label class="radio" for="radio">$50k-$100k</label>
      </div>
-     <div>
+     <div class="box">
        <input type="radio" name="" id="radio">
       <label class="radio" for="radio">$100k+</label>
      </div>
-     </div>
-     
+     </fieldset>
+
      <div class="about-us">
-       <label for="us">How did you hear about us?</label>
-       <input type="text" name="" id="us">
+       <label for="us" class="input">How did you hear about us?</label>
+       <textarea name="" id="" cols="30" rows="3"></textarea>
      </div>
      <div class="btn">
      <button class="submit"
