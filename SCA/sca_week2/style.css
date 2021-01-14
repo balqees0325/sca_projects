@@ -50,11 +50,10 @@ p {
  input[type="tel"],
  input[type="email"],
  input[type="text"],
- textarea {
+ textarea,fieldset {
    width: 90%;
  }
  legend {
-   width: inherit;
    text-align: center;
    font-size: 1.5rem;
  }
@@ -93,7 +92,7 @@ position: relative;
   div.btn {
      text-align: right; 
      margin-right: 30px;
-    }
+  }
   button {
    padding: 8px 15px;
    border: none;
@@ -101,15 +100,24 @@ position: relative;
    background-color:transparent;
    border: 2px solid #666;
    transition: all 0.5s ease-in-out;
-    }
+  }
   a {
   color:#fff;
   text-decoration: none;
   font-weight: bold;
-    }
+  }
   button:hover {
   background-color: rgb(1, 1, 26);
-    }
+  }
+  /* input:valid {
+    border: 2px solid rgb(2, 71, 2);
+  }
+  input:invalid {
+    border: 2px solid rgb(172, 5, 5);
+  }
+  input:focus:invalid {
+    border: none;
+  } */
 
   @media (min-width: 360px) {
   .container {
@@ -126,14 +134,14 @@ position: relative;
     position: absolute;
     top: 0;
     right: 35px;
-  }
+}
     div.message {
   position: relative;
-  }
+}
   .text1, .text2 {
     font-size: 12px;
     word-spacing: 0.4px;
-  }
+}
   div.message .text2 {
   position: absolute;
   top: 0;
