@@ -19,8 +19,9 @@ if(first === "" || last === "" || company == "") {
 	errorMsg.innerText = sayError;
 	return 
 	 } 
-	 alert('form submitted successfully!')
-	 return 
+	//  alert('Thank you!! form submitted successfully!')
+	//  return 
+	 window.location.assign('thanks.html')
 }
 document.querySelector('#formId').addEventListener('submit', validateForm);
 
