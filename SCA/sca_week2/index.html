@@ -18,80 +18,83 @@
      <p>We'd love to hear from you, send us a message using the form or email us.</p>
    </div>
    <div class="form">
-   <form class="sign-up" name="myForm" id="myForm" onsubmit="return validateForm();">
+   <form class="sign-up" name="myForm" id="myForm" onsubmit="return validateForm()">
      
-     <div class="firstN">
-       <label class="input" for="firstName">First
+   <div class="firstN">
+    <label class="input" for="firstName">First
         Name</label>
-       <input type="text"
-       id="firstName" name="fname" required>
-     </div>
+    <input type="text"
+       id="firstName" name="fname">
+  </div>
 
-     <div class="lastN">
-      <label class="input" for="lastName">Last
+  <div class="lastN">
+    <label class="input" for="lastName">Last
         Name</label>
-       <input type="text"
-       id="lastName" name="lname" required>
-     </div>
+    <input type="text"
+       id="lastName" name="lname">
+  </div>
 
-     <div class="mail">
-      <label class="input" for="email">Email</label>
-       <input type="email" 
+  <div class="mail">
+    <label class="input" for="email">Email</label>
+    <input type="email" 
        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
        id="email" name="email" required>
-     </div>
+    </div>
 
-     <div class="company">
-      <label class="input"
+  <div class="company">
+    <label class="input"
       for="company">Company</label>
-       <input type="text"
+    <input type="text"
        id="company" name="company" required>
-     </div>
+  </div>
 
-     <div class="tel">
-      <label class="input"
+  <div class="tel">
+    <label class="input"
       class="one" for="tel">Phone</label>
-       <input type="tel"
+    <input type="tel"
        id="tel" name="phone" required >
-       <label class="two" for="">Optional</label>
-     </div>
+    <label class="two" for="">Optional</label>
+  </div>
      
 
-     <div class="message">
-       <p class="text1">How can we help you</p>
-       <p class="text2">Max of 300 chareacters</p>
-     <textarea name="" id="" cols="30" maxlength="140" rows="10"></textarea>
-     </div>
-     <fieldset>
+  <div class="message">
+    <p class="text1">How can we help you</p>
+    <p class="text2">Max of 300 chareacters</p>
+    <textarea name="" id="" cols="30" maxlength="140" rows="10"></textarea>
+  </div>
+  <fieldset>
      <legend>
        Expected budget
-      </legend>
-       <div class="box">
-       <input type="radio" required name="budget" id="radio">
-      <label class="radio" for="radio">Less than $25k</label>
-     </div>
+     </legend>
      <div class="box">
-       <input type="radio" required name="budget" id="radio">
-      <label class="radio" for="radio">$25k-$50k</label>
-     </div>
-     <div class="box">
-       <input type="radio" required name="budget" id="radio">
-      <label class="radio" for="radio">$50k-$100k</label>
-     </div>
-     <div class="box">
-       <input type="radio" required name="budget" id="radio">
-      <label class="radio" for="radio">$100k+</label>
-     </div>
-     </fieldset>
+     <input type="radio" required name="budget" id="radio">
+     <label class="radio" for="radio">Less than $25k</label>
+  </div>
+  <div class="box">
+    <input type="radio" required name="budget" id="radio">
+    <label class="radio" for="radio">$25k-$50k</label>
+  </div>
+  <div class="box">
+    <input type="radio" required name="budget" id="radio">
+    <label class="radio" for="radio">$50k-$100k</label>
+  </div>
+  <div class="box">
+    <input type="radio" required name="budget" id="radio">
+    <label class="radio" for="radio">$100k+</label>
+  </div>
+  </fieldset>
 
-     <div class="about-us">
-       <label for="us" class="input">How did you hear about us?</label>
-       <textarea name="" id="" cols="30" maxlength="70" rows="3"></textarea>
-     </div>
-     <div class="btn">
-     <button class="submit"
+  <div class="about-us">
+    <label for="us" class="input">How did you hear about us?</label>
+    <textarea name="" id="" cols="30" maxlength="70" rows="3"></textarea>
+  </div>
+  <div id="error-message">
+
+  </div>
+  <div class="btn">
+    <button class="submit"
      id="submit"><a href="thanks.html">Submit</a></button>
-     </div>
+  </div>
 
    </form>
    </div>
