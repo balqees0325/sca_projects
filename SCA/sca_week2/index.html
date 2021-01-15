@@ -18,7 +18,7 @@
      <p>We'd love to hear from you, send us a message using the form or email us.</p>
    </div>
    <div class="form">
-   <form class="sign-up" name="myForm" id="myForm" onsubmit="return validateForm()">
+   <form class="sign-up" name="myForm" id="formId">
      
    <div class="firstN">
     <label class="input" for="firstName">First
@@ -37,22 +37,22 @@
   <div class="mail">
     <label class="input" for="email">Email</label>
     <input type="email" 
-       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-       id="email" name="email" required>
+       
+       id="email" name="email">
     </div>
 
   <div class="company">
     <label class="input"
       for="company">Company</label>
     <input type="text"
-       id="company" name="company" required>
+       id="company" name="company">
   </div>
 
   <div class="tel">
     <label class="input"
       class="one" for="tel">Phone</label>
     <input type="tel"
-       id="tel" name="phone" required >
+       id="tel" name="phone">
     <label class="two" for="">Optional</label>
   </div>
      
@@ -67,19 +67,19 @@
        Expected budget
      </legend>
      <div class="box">
-     <input type="radio" required name="budget" id="radio">
+     <input type="radio" name="budget" id="radio">
      <label class="radio" for="radio">Less than $25k</label>
   </div>
   <div class="box">
-    <input type="radio" required name="budget" id="radio">
+    <input type="radio" name="budget" id="radio">
     <label class="radio" for="radio">$25k-$50k</label>
   </div>
   <div class="box">
-    <input type="radio" required name="budget" id="radio">
+    <input type="radio" name="budget" id="radio">
     <label class="radio" for="radio">$50k-$100k</label>
   </div>
   <div class="box">
-    <input type="radio" required name="budget" id="radio">
+    <input type="radio" name="budget" id="radio">
     <label class="radio" for="radio">$100k+</label>
   </div>
   </fieldset>
@@ -93,7 +93,7 @@
   </div>
   <div class="btn">
     <button class="submit"
-     id="submit"><a href="thanks.html">Submit</a></button>
+     id="submit">submit</button>
   </div>
 
    </form>

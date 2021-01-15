@@ -1,16 +1,22 @@
-
-
+//main function;
 const validateForm = (event) => {
-event.preventDefault();
+	 event.preventDefault();
+let form = document.querySelector('#myForm');
 let first = document.querySelector('#firstName').value;
-let last = document.queryselector('#lastName').value;
-let email = document.queryselector('#email').value;
-let company = document.queryselector('#company').value;
-let phone = document.queryselector('#tel').value;
-let errorMsg = document.queryselector('#error-message');
-let form = document.getElementById('myForm');
-let sayError;
+let last = document.querySelector('#lastName').value;
+let email = document.querySelector('#email').value;
+let company = document.querySelector('#company').value;
+let phone = document.querySelector('#tel').value;
+let errorMsg = document.querySelector('#error-message');
 
+let sayError;
+//new function declared;
+let isValidate;
+let validate = () => {
+	isValidate = false;
+	if (!isValidate) {
+		validateForm();
+	}
 if(first === "" || last === "" || company == "") {
 	 errorMsg = 'sorry input field can not be empty, please enter fields';
 	 errorMsg.innerText = sayError;
@@ -19,9 +25,11 @@ if(first === "" || last === "" || company == "") {
 	errorMsg = 'email not valid please enter correct address';
 	errorMsg.innerText = sayError;
    return false;
-   
- } 
+	 } 
+	 alert('form submitted successfully!')
 	 return true;
 }
+}
+document.querySelector('#formId').addEventListener('submit', validateForm);
 
 
