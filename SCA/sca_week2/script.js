@@ -10,7 +10,7 @@ let phone = document.querySelector('#tel').value;
 let errorMsg = document.querySelector('#error-message');
 let sayError;
 
-if(first === "" || last === "" || company == "") {
+if(first === "" || last === "" || company == "" || phone === "") {
 	 sayError = 'sorry input field can not be empty, please enter fields';
 	 errorMsg.innerText = sayError;
 	 return 
