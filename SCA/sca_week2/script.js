@@ -18,11 +18,12 @@ if(first === "" || last === "" || company == "") {
 	sayError = 'email not valid please enter correct address';
 	errorMsg.innerText = sayError;
 	return 
-	 } 
-	//  alert('Thank you!! form submitted successfully!')
-	//  return 
-	 window.location.assign('thanks.html')
-}
+	} 
+	 console.log('Thank you!! form submitted successfully!') 
+	 setTimeout(function(){
+			window.location.href = '/thanks.html';
+	 }, 2000);	
+} 
 document.querySelector('#formId').addEventListener('submit', validateForm);
 
 
