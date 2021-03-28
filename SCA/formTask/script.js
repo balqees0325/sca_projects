@@ -17,9 +17,8 @@ const formData = (e) => {
  console.log(localStorage.getItem('formInput'));
  e.preventDefault();
  
- setTimeout(function () {
 		window.location.href = "/login.html";
- }, 3000);
+ 
 }
 
 button.addEventListener('click', formData);
