@@ -1,23 +1,24 @@
-let form = document.querySelector('form');
+// let form = document.querySelector('form');
 let uname = document.querySelector('.name');
-let pword = document.querySelector(".pswd");
-let btn = document.querySelector("button");
-let sayError;
+let pword = document.querySelector('.pswd');
+let button = document.querySelector("button");
 
 const compareData = () => {
    let loginInput = {
-		uname: uname.value,
-    pword: pword.value
+		user: uname.value,
+    password: pword.value
  };
-  if(localStorage.getItem('formInput') === ('loginInput')) {
-    setTimeout(function () {
-			window.location.href = "/login.html";
-		}, 3000);
-  } else if (localStorage.getItem('formInput') !== ('loginInput.uname')) {
-    sayError = uname;
-    sayError.innerText = 'Username doesn\'t match registered data';
-  } else if (localStorage.getItem("formInput") !== "loginInput.pword") {
-		sayError = pword;
-		sayError.innerText = "Password doesn't match registered data";
-	}
+let registeredData = JSON.parse(localStorage.getItem('formInput'));
+loginInput = JSON.parse(localStorage.getItem("loginInput"));
+let registeredUser = registeredData.username;
+let registeredPswd = registeredData.password;
+
+if((registeredUser === loginInput.user) && (registeredPswd === loginInput.password)) {
+  window.location.href = '/profile.html';
+} else {
+  alert(`${loginInput} not compatible to ${registeredData}`);
+  window.location.href = '/login.html';
 }
+}
+
+button.addEventListener("click", compareData);

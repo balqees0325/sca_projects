@@ -17,8 +17,7 @@ const formData = (e) => {
  console.log(localStorage.getItem('formInput'));
  e.preventDefault();
  
-		window.location.href = "/login.html";
- 
+		window.location.href = "/login.html";	
 }
 
 button.addEventListener('click', formData);
