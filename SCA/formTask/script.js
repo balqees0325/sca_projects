@@ -13,8 +13,8 @@ const formData = (e) => {
     phone: phone.value,
     password: password.value
  };
- localStorage.setItem('formInput', JSON.stringify('formInput'));
- console.log(localStorage.getItem('formInput'));
+ localStorage.setItem("formInput", JSON.stringify(formInput));
+ console.log(localStorage.getItem("formInput"));
  e.preventDefault();
  
 		window.location.href = "/login.html";	

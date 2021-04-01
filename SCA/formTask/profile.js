@@ -1,7 +1,7 @@
 let button = document.querySelector('button');
 let displayProfile = document.querySelector('.userdata')
 const displayData = () =>{
-  let {username, phone, email,password} = JSON.parse(window.localStorage.getItem('formInput'));
+  let {username, phone, email,password} = JSON.parse(window.localStorage.getItem("formInput"));
   displayProfile.innerHTML = `
     h2>Hello ${username}</h1>
     <div>
@@ -11,12 +11,14 @@ const displayData = () =>{
     <p>Password: ${Password}</p>
     </div>
   `;
-}
-const clearUserData = () =>{
-  let loginInput = JSON.parse(localStorage.getItem('loginInput'));
-  console.log(`${loginInput}`);
-  // window.localStorage.removeItem('loginInput');
 
-  alert(`You have succefully logout`);
+  const clearUserData = () => {
+		let loginInput = JSON.parse(localStorage.getItem("loginInput"));
+		console.log(`${loginInput}`);
+		window.localStorage.clear("loginInput");
+
+		alert(`You have succefully logout`);
+	};
 }
-button.addEventListener('click', clearUserData);
+
+button.addEventListener("click", displayData);
