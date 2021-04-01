@@ -9,13 +9,13 @@ const loginData = () =>{
   }
    
   let registeredDetails = 
-  JSON.parse(localStorage.getItem('data'));
+  JSON.parse(localStorage.getItem('formInput'));
    console.log(registeredDetails);
-  //  console.log(loginDetail);
-  let getRegisteredUser = registeredDetails.username;
-  let getRegisteredPwd = registeredDetails.password;
-  let getLogUser = loginDetail.user;
-  let getLogPwd = loginDetail.pswd;
+   console.log(loginDetail);
+  // let getRegisteredUser = registeredDetails.username;
+  // let getRegisteredPwd = registeredDetails.password;
+  // let getLogUser = loginDetail.user;
+  // let getLogPwd = loginDetail.pswd;
 
   // e.preventDefault(); 
 // console.log(getRegisteredUser);
