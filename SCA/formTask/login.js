@@ -1,24 +1,35 @@
-// let form = document.querySelector('form');
-let uname = document.querySelector('.name');
+let user = document.querySelector('.user');
 let pword = document.querySelector('.pswd');
 let button = document.querySelector("button");
 
-const compareData = () => {
-   let loginInput = {
-		user: uname.value,
-    password: pword.value
- };
-let registeredData = JSON.parse(localStorage.getItem('formInput'));
-loginInput = JSON.parse(localStorage.getItem("loginInput"));
-let registeredUser = registeredData.username;
-let registeredPswd = registeredData.password;
+const loginData = () =>{
+  let loginDetail = {
+    user: user.value,
+    pswd: pword.value 
+  }
+   
+  let registeredDetails = 
+  JSON.parse(localStorage.getItem('data'));
+   console.log(registeredDetails);
+  //  console.log(loginDetail);
+  let getRegisteredUser = registeredDetails.username;
+  let getRegisteredPwd = registeredDetails.password;
+  let getLogUser = loginDetail.user;
+  let getLogPwd = loginDetail.pswd;
 
-if((registeredUser === loginInput.user) && (registeredPswd === loginInput.password)) {
-  window.location.href = '/profile.html';
-} else {
-  alert(`${loginInput} not compatible to ${registeredData}`);
-  window.location.href = '/login.html';
-}
-}
+  // e.preventDefault(); 
+// console.log(getRegisteredUser);
+// console.log(getRegisteredPwd);
+// console.log(getLogUser);
+// console.log(getLogPwd);
 
-button.addEventListener("click", compareData);
+  if((getRegisteredUser === getLogUser) && (getRegisteredPwd === getLogPwd)) {
+    window.location.href = '/profile.html';
+  } else if(getRegisteredUser === getLogUser) {
+    alert(`${getLogUser} does not match ${getRegisteredUser}`);
+  } else{ 
+    alert(`${getLogPwd} does not match ${getRegisteredPwd}`);
+    window.location.href = '/login.html';
+  }
+}
+button.addEventListener("click", loginData);
