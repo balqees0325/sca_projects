@@ -12,13 +12,14 @@ const displayData = () =>{
     </div>
   `;
 
-  const clearUserData = () => {
+}
+
+ const clearUserData = () => {
 		let loginInput = JSON.parse(localStorage.getItem("loginInput"));
 		console.log(`${loginInput}`);
 		window.localStorage.clear("loginInput");
-
 		alert(`You have succefully logout`);
-	};
-}
+ };
 
-button.addEventListener("click", displayData);
+document.body.addEventListener("load", displayData);
+button.addEventListener("click", clearUserData);

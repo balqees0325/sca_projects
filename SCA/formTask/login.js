@@ -2,26 +2,19 @@ let user = document.querySelector('.user');
 let pword = document.querySelector('.pswd');
 let button = document.querySelector('button');
 
-const loginData = () =>{
+const loginData = (e) =>{
   let loginDetail = {
     user: user.value,
     pswd: pword.value 
   }
-   
   let registeredDetails = 
   JSON.parse(localStorage.getItem("formInput"));
-  //  console.log(registeredDetails);
-  //  console.log(loginDetail);
   let getRegisteredUser = registeredDetails.username;
   let getRegisteredPwd = registeredDetails.password;
   let getLogUser = loginDetail.user;
   let getLogPwd = loginDetail.pswd;
 
-  e.preventDefault(); 
-// console.log(getRegisteredUser);
-// console.log(getRegisteredPwd);
-// console.log(getLogUser);
-// console.log(getLogPwd);
+  e.preventDefault();
 
   if((getRegisteredUser === getLogUser) && (getRegisteredPwd === getLogPwd)) {
     window.location.href = '/profile.html';
